@@ -5,18 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
-<body>
-    <header>
+<body class="background">
+    <header class="backgroundImg">
         <nav>
 
             <h1>BIENVENIDOS A BLOG DE ALEJANDRO</h1>
         <ul>
-            <li><a href="PRESENTACION.html">Inicio</a></li>
-            <li><a href="galeria de experiencias.html">Galeria</a></li>
-            <li><a href="Formulario.html">Formulario</a></li>
-            <li><a href="comentario.html">Comentario</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="index.html" class="btn1">Inicio</a></li>
+            <li><a href="galeria de experiencias.html" class="btn1">Galeria</a></li>
+            <li><a href="Formulario.html" class="btn1">Formulario</a></li>
+            <li><a href="comentario.html" class="btn1">Comentario</a></li>
+            <li><a href="contacto.html" class="btn1">Contacto</a></li>
 
             
         </ul>
@@ -24,28 +25,28 @@
     </header>
     <main>
         <form  >
-            <h3>Formulario</h3>
-            <ol>
-                <li> <label for="gusto">¿Te gusto el blog?</label>
+            <h3 class="t1">Formulario</h3>
+            <ol class="formulario">
+                <li class="formularioEspacio"> <div><label for="gusto">¿Te gusto el blog?</label></div>
                     <p>SI</p>
                     <input type="radio" name="gusto" id="" value="SI">
                     <p>NO</p>
                     <input type="radio" name="gusto" id=""value="NO">
                 </li>
-                <li>
-                    <label for="sencillo">¿el contenido te parecio sencillo?</label>
+                <li class="formularioEspacio">
+                    <div><label for="sencillo">¿el contenido te parecio sencillo?</label></div>
                     <p>SI</p>
                     <input type="radio" name="sencillo" id="" value="SI">
                     <p>NO</p>
                     <input type="radio" name="sencillo" id=""value="NO">
                 </li>
-                <li> <label for="contenido">¿Quisieras mas contenido asi?</label>
+                <li class="formularioEspacio"> <div><label for="contenido">¿Quisieras mas contenido asi?</label></div>
                     <p>SI</p>
                     <input type="radio" name="contenido" id="" value="SI">
                     <p>NO</p>
                     <input type="radio" name="contenido" id=""value="NO">
                 </li>
-                <li> <label for="aportes">¿Faltan algunas cosas?</label>
+                <li class="formularioEspacio"><div><label for="aportes">¿Faltan algunas cosas?</label></div> 
                     <p>Muchas</p>
                     <input type="radio" name="aportes" id="" value="SI">
                     <p>No muchas</p>
@@ -55,10 +56,10 @@
             </li>
             </ol>
 
-            <input type="submit">
+            <input type="submit" class="btn1">
     </main>
     
-    <footer>AleGonzalezGitHub</footer>
+    <footer class="footer"><p>Me puedes encontrar en instagram como ale_gonzalez1207</p></footer>
     
 </body>
 </html>
