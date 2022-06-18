@@ -212,3 +212,64 @@
     }
     
 }
+.contenedorGaleria{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: "navbar navbar navbar"
+                        "header header header"
+                        "main main main"
+                        "footer footer footer";
+    flex-direction: column;
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.tarjetas{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 40px;
+    color: #f0f8ff62;
+
+}
+.tarjeta{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+.tarjeta h3{
+    background-color: #0F2027;
+    padding: 10px;
+    border-radius: 10px;
+}
+.img1{
+    background-image: url(../imagenes/colegio.jpg);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-size: cover;
+}
+.img2{
+    background-image: url(../imagenes/payasos.jpg);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-size: cover;
+}
+.img3{
+    background-image: url(../imagenes/electricidad.png);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-size: cover;
+}
+
+@media (min-width:600px){
+    .tarjetas{
+        flex-direction: row;
+        
+    }
+    .tarjeta{
+        margin-left: 30px;
+    }
+}
