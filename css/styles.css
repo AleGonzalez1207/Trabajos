@@ -265,11 +265,19 @@
 }
 
 @media (min-width:600px){
+    .imgPrincipal{
+        width: 1100px;
+    }
     .tarjetas{
         flex-direction: row;
         
     }
     .tarjeta{
         margin-left: 30px;
+    }
+}
+@media (min-width: 1000px ){
+    .imgPrincipal{
+        width: 900px;
     }
 }
